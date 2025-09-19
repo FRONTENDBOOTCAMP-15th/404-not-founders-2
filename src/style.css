@@ -1,2 +1,82 @@
-/* CSS 스타일을 작성해 주세요. */ 
-@import "tailwindcss";
+/* CSS 스타일을 작성해 주세요. */
+@import 'tailwindcss';
+@theme {
+  --color-primary: #0075ff;
+  --color-secondary: #fff;
+  --color-secondary: #f5f5f5;
+  --color-accent: #276ef1;
+  --color-negative: #e11900;
+  --color-warning: #ffc043;
+  --color-positive: #048848;
+
+  --color-primary-dark: white;
+  --color-secondary-dark: black;
+  --color-tertiary-dark: #424242;
+
+  /* Contents */
+  --color-contentPrimary: black;
+  --color-contentSecondary: #6b6b6b;
+  --color-contentTertiary: #a6a6a6;
+
+  --color-contentPrimary-dark: white;
+  --color-contentSecondary-dark: #a6a6a6;
+  --color-contentTertiary-dark: #898989;
+
+  /* Border/Transparent */
+  --color-borderOpaque: #898989;
+  --color-borderTransparent: rgba(137, 137, 137, 0.3);
+  --color-positiveTransparent: rgba(4, 136, 72, 0.1);
+  --color-negativeTransparent: rgba(225, 25, 0, 0.1);
+
+  --color-borderOpaque-dark: #c4c4c4;
+
+  /* Typography */
+  /* Heading */
+  --heading1-text: 50.517px;
+  --heading2-text: 37.897px;
+  --heading3-text: 28.43px;
+  --heading4-text: 21.328px;
+  --heading5-text: 16px;
+  --heading-weight: 700;
+  --heading-height: 140%; /* 70.724px */
+
+  /* Label */
+  --label1-text: 37.897px;
+  --label2-text: 28.43px;
+  --label3-text: 21.328px;
+  --label4-text: 16px;
+  --label5-text: 12px;
+  --label-weight: 600;
+  --label-height: 150%; /* 56.845px */
+
+  /* Paragraph */
+  --paragraph1-text: 28.43px;
+  --paragraph2-text: 21.328px;
+  --paragraph3-text: 16px;
+  --paragraph4-text: 12px;
+  --paragraph-weight: 400;
+  --paragraph-height: 160%; /* 19.205px */
+
+  /* Spacing - 4px 단위로 */
+  /*
+  Grid
+
+  Mobile
+  range: 320px - 599px
+  columns: 4
+  margin: 24px
+  gutter: 16px
+
+  Tablet
+  range: 600px - 1135px
+  columns: 8
+  margin: 32px
+  gutter: 36px
+
+  Desktop
+  range: 1136px and up
+  columns: 12
+  margin: 64px
+  gutter: 36px
+  */
+}
