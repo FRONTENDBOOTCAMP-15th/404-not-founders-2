@@ -1,0 +1,55 @@
+@layer components {
+  /* 섹션 컨테이너 & 타이틀 */
+  .faq-section {
+    @apply my-10 px-6 md:my-14 md:px-8 xl:my-16 xl:px-[200px];
+  }
+  .faq-title {
+    @apply mx-auto max-w-[1135px] mb-9 text-2xl font-bold leading-tight md:text-3xl xl:text-4xl;
+  }
+
+  /* 항목(Details) */
+  .faq-item {
+    @apply group mx-auto w-full max-w-[1135px] border-b border-[#8989894d];
+  }
+
+  /* Summary(질문 라인) */
+  .faq-summary {
+    @apply flex items-center gap-8 p-4 cursor-pointer
+           font-semibold text-[length:var(--paragraph3-text)]
+           focus:outline-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#0075FF];
+  }
+  /* 브라우저 기본 토글 마커 제거 */
+  .faq-summary::-webkit-details-marker {
+    display: none;
+  }
+
+  /* 토글 아이콘(플러스 → 오픈 시 마이너스) */
+  .toggle-icon {
+    @apply relative ml-auto inline-block h-6 w-6;
+  }
+  .toggle-icon-line {
+    @apply absolute left-1/2 top-1/2 block -translate-x-1/2 -translate-y-1/2
+           bg-[color:var(--color-primary)];
+  }
+  .toggle-icon-h {
+    @apply toggle-icon-line h-0.5 w-4;
+  } /* 가로 막대 */
+  .toggle-icon-v {
+    @apply toggle-icon-line h-4 w-0.5;
+  } /* 세로 막대 */
+  /* 열림 상태에서는 세로 막대 숨겨서 '-' 모양 */
+  .faq-item[open] .toggle-icon-v {
+    @apply opacity-0;
+  }
+
+  /* 본문(답변) */
+  .faq-body {
+    @apply m-6 flex flex-col gap-6
+           text-[length:var(--paragraph3-text)] font-[var(--paragraph-weight)] leading-[160%];
+  }
+
+  /* 링크 스타일 */
+  .faq-link {
+    @apply m-1 text-current no-underline font-semibold border-b border-[color:var(--color-contentTertiary)];
+  }
+}

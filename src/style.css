@@ -1,5 +1,12 @@
 @import 'tailwindcss';
 
+<<<<<<< HEAD
+=======
+@font-face {
+  font-family: Pretendard;
+  src: url('/font/woff2/PretendardVariable.woff2');
+}
+>>>>>>> 730bf2f2c2b2451592c4e14265bf9d3e25a36f15
 @theme {
   --color-primary: #0075ff;
   --color-secondary: #fff;
@@ -31,6 +38,8 @@
   --color-borderOpaque-dark: #c4c4c4;
 
   /* Typography */
+  --font-pretendard: Pretendard, 'sans-serif';
+
   /* Heading */
   --text-heading1-text: 50.517px;
   --text-heading2-text: 37.897px;
@@ -60,23 +69,28 @@
   /* Spacing - 4px 단위로 */
   /*
   Grid
-
   Mobile
   range: 320px - 599px
   columns: 4
   margin: 24px
   gutter: 16px
-
   Tablet
   range: 600px - 1135px
   columns: 8
   margin: 32px
   gutter: 36px
-
   Desktop
   range: 1136px and up
   columns: 12
   margin: 64px
   gutter: 36px
   */
+
+  --breakpoint-sm: 320px;
+  --breakpoint-md: 600px;
+  --breakpoint-lg: 1136px;
+}
+
+.input-error input:invalid + .error-msg {
+  visibility: visible;
 }
