@@ -35,8 +35,8 @@
   --color-borderOpaque-dark: #c4c4c4;
 
   /* Typography */
-  --font-pretendard: Pretendard, "sans-serif";
-  
+  --font-pretendard: Pretendard, 'sans-serif';
+
   /* Heading */
   --text-heading1-text: 50.517px;
   --text-heading2-text: 37.897px;
@@ -89,4 +89,8 @@
   --breakpoint-sm: 320px;
   --breakpoint-md: 600px;
   --breakpoint-lg: 1136px;
+}
+
+.input-error input:invalid + .error-msg {
+  visibility: visible;
 }
