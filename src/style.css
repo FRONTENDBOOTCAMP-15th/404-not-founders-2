@@ -1,2 +1,96 @@
 @import 'tailwindcss';
 
+@font-face {
+  font-family: Pretendard;
+  src: url(/public/font/woff2/PretendardVariable.woff2);
+}
+@theme {
+  --color-primary: #0075ff;
+  --color-secondary: #fff;
+  --color-tertiary: #f5f5f5;
+  --color-accent: #276ef1;
+  --color-negative: #e11900;
+  --color-warning: #ffc043;
+  --color-positive: #048848;
+
+  --color-primary-dark: white;
+  --color-secondary-dark: black;
+  --color-tertiary-dark: #424242;
+
+  /* Contents */
+  --color-contentPrimary: black;
+  --color-contentSecondary: #6b6b6b;
+  --color-contentTertiary: #a6a6a6;
+
+  --color-contentPrimary-dark: white;
+  --color-contentSecondary-dark: #a6a6a6;
+  --color-contentTertiary-dark: #898989;
+
+  /* Border/Transparent */
+  --color-borderOpaque: #898989;
+  --color-borderTransparent: rgba(137, 137, 137, 0.3);
+  --color-positiveTransparent: rgba(4, 136, 72, 0.1);
+  --color-negativeTransparent: rgba(225, 25, 0, 0.1);
+
+  --color-borderOpaque-dark: #c4c4c4;
+
+  /* Typography */
+  --font-pretendard: Pretendard, 'sans-serif';
+
+  /* Heading */
+  --text-heading1-text: 50.517px;
+  --text-heading2-text: 37.897px;
+  --text-heading3-text: 28.43px;
+  --text-heading4-text: 21.328px;
+  --text-heading5-text: 16px;
+  --font-heading-weight: 700;
+  --leading-heading-height: 140%; /* 70.724px */
+
+  /* Label */
+  --text-label1-text: 37.897px;
+  --text-label2-text: 28.43px;
+  --text-label3-text: 21.328px;
+  --text-label4-text: 16px;
+  --text-label5-text: 12px;
+  --font-label-weight: 600;
+  --leading-label-height: 150%; /* 56.845px */
+
+  /* Paragraph */
+  --text-paragraph1-text: 28.43px;
+  --text-paragraph2-text: 21.328px;
+  --text-paragraph3-text: 16px;
+  --text-paragraph4-text: 12px;
+  --font-paragraph-weight: 400;
+  --leading-paragraph-height: 160%; /* 19.205px */
+
+  /* Spacing - 4px 단위로 */
+  /*
+  Grid
+
+  Mobile
+  range: 320px - 599px
+  columns: 4
+  margin: 24px
+  gutter: 16px
+
+  Tablet
+  range: 600px - 1135px
+  columns: 8
+  margin: 32px
+  gutter: 36px
+
+  Desktop
+  range: 1136px and up
+  columns: 12
+  margin: 64px
+  gutter: 36px
+  */
+
+  --breakpoint-sm: 320px;
+  --breakpoint-md: 600px;
+  --breakpoint-lg: 1136px;
+}
+
+.input-error input:invalid + .error-msg {
+  visibility: visible;
+}
