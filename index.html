@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>프로젝트 - CSS</title>
+    <title>프로젝트-CSS</title>
     <link rel="icon" href="/vite.svg" />
     <link rel="preload" as="font" href="/font/woff2/PretendardVariable.woff2" crossorigin="anonymous" />
     <link rel="stylesheet" as="style" href="/font/pretendardvariable.css" />
@@ -11,8 +11,138 @@
     <script type="module" src="/src/main.js"></script>
   </head>
   <body>
-<<<<<<< HEAD
-=======
+    <section class="my-10 px-6 md:my-14 md:px-8 xl-my-16 xl:px-[200px]">
+      <!-- 타이틀 -->
+      <h2 class="mx-auto max-w-[1135px] mb-9 text-2xl font-bold leading-tight md:text-3xl xl:text-4xl">자주 하는 질문</h2>
+      <!-- 본문 -->
+      <!-- 1 -->
+      <details class="group mx-auto w-full max-w-[1135px] border-b border-[#8989894d]">
+        <!-- 질문 영역 -->
+        <summary class="flex items-center gap-8 p-4 cursor-pointer text-[length:var(--paragraph3-text)] font-semibold focus:outline-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#0075FF]">
+          <!-- 질문 -->
+          <span>미터기 요금을 중복으로 결제하였습니다 (앱+현장)</span>
+          <!-- 토글 아이콘 : +/- -->
+          <span class="relative ml-auto inline-block h-6 w-6" aria-hidden="true">
+            <span class="absolute left-1/2 top-1/2 block h-0.5 w-4 -translate-x-1/2 -translate-y-1/2 bg-[color:var(--color-primary)]"></span>
+            <span class="absolute left-1/2 top-1/2 block h-4 w-0.5 -translate-x-1/2 -translate-y-1/2 bg-[color:var(--color-primary)] group-open:opacity-0"></span>
+          </span>
+        </summary>
+        <!-- 답변 영역 -->
+        <div class="m-6 flex flex-col gap-6 text-[length:var(--paragraph3-text)] font-[var(--paragraph-weight)] leading-[160%]">
+          <p>비슷한 금액의 요금이 중복 청구 된 경우 아래와 같이 생각하실 수 있습니다.</p>
+          <ol class="list-decimal pl-6">
+            <li>가족 또는 지인이 동일한 카드를 등록하여 사용하지 않았는지 확인해보세요.</li>
+            <li>우연히 같은 요금의 다른 차량 서비스를 이용하지 않았는지 확인해보는 것이 좋습니다.</li>
+            <li>어떠한 이유로 잘못 청구된 여정 요금이 변경된 경우가 없는지 확인해 보세요. 요금이 변경되면 업데이트 된 영수증이 발급됩니다.</li>
+          </ol>
+          <p>앱 결제 차량에서 실수로 현장에서 요금을 지불하여 중복 결제가 된 경우 결제된 카드 내역 또는 영수증 캡처하여 아래 링크를 통해 알려주세요.</p>
+          <!-- 게시판 링크 -->
+          <a href="/" class="m-1 text-current no-underline font-semibold border-b border-[var(--color-contentTertiary)]">[고객지원 &gt; 여정 및 요금 &gt; 내 요금 및 수수료 검토 &gt; 미터기 요금을 중복으로 결제하였습니다]</a>
+        </div>
+      </details>
+      <!-- 2 -->
+      <details class="group mx-auto w-full max-w-[1135px] border-b border-[#8989894d]">
+        <!-- 질문 영역 -->
+        <summary class="flex items-center gap-8 p-4 cursor-pointer text-[length:var(--paragraph3-text)] font-semibold focus:outline-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#0075FF]">
+          <!-- 질문 -->
+          <span>미터기 요금 외에 다른 요금이 결제 됐습니다. (통행료, 가승인 등)</span>
+          <!-- 토글 아이콘 : +/- -->
+          <span class="relative ml-auto inline-block h-6 w-6" aria-hidden="true">
+            <span class="absolute left-1/2 top-1/2 block h-0.5 w-4 -translate-x-1/2 -translate-y-1/2 bg-[color:var(--color-primary)]"></span>
+            <span class="absolute left-1/2 top-1/2 block h-4 w-0.5 -translate-x-1/2 -translate-y-1/2 bg-[color:var(--color-primary)] group-open:opacity-0"></span>
+          </span>
+        </summary>
+        <!-- 답변 영역 -->
+        <div class="m-6 flex flex-col gap-6 text-[length:var(--paragraph3-text)] font-[var(--paragraph-weight)] leading-[160%]">
+          <p>비슷한 금액의 요금이 중복 청구 된 경우 아래와 같이 생각하실 수 있습니다.</p>
+          <ol class="list-decimal pl-6">
+            <li>가족 또는 지인이 동일한 카드를 등록하여 사용하지 않았는지 확인해보세요.</li>
+            <li>우연히 같은 요금의 다른 차량 서비스를 이용하지 않았는지 확인해보는 것이 좋습니다.</li>
+            <li>어떠한 이유로 잘못 청구된 여정 요금이 변경된 경우가 없는지 확인해 보세요. 요금이 변경되면 업데이트 된 영수증이 발급됩니다.</li>
+          </ol>
+          <p>앱 결제 차량에서 실수로 현장에서 요금을 지불하여 중복 결제가 된 경우 결제된 카드 내역 또는 영수증 캡처하여 아래 링크를 통해 알려주세요.</p>
+          <!-- 게시판 링크 -->
+          <a href="/" class="m-1 text-current no-underline font-semibold border-b border-[var(--color-contentTertiary)]">[고객지원 &gt; 여정 및 요금 &gt; 내 요금 및 수수료 검토 &gt; 미터기 요금을 중복으로 결제하였습니다]</a>
+        </div>
+      </details>
+      <!-- 3 -->
+      <details class="group mx-auto w-full max-w-[1135px] border-b border-[#8989894d]">
+        <!-- 질문 영역 -->
+        <summary class="flex items-center gap-8 p-4 cursor-pointer text-[length:var(--paragraph3-text)] font-semibold focus:outline-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#0075FF]">
+          <!-- 질문 -->
+          <span>분실물과 관련해 기사에게 연락하기</span>
+          <!-- 토글 아이콘 : +/- -->
+          <span class="relative ml-auto inline-block h-6 w-6" aria-hidden="true">
+            <span class="absolute left-1/2 top-1/2 block h-0.5 w-4 -translate-x-1/2 -translate-y-1/2 bg-[color:var(--color-primary)]"></span>
+            <span class="absolute left-1/2 top-1/2 block h-4 w-0.5 -translate-x-1/2 -translate-y-1/2 bg-[color:var(--color-primary)] group-open:opacity-0"></span>
+          </span>
+        </summary>
+        <!-- 답변 영역 -->
+        <div class="m-6 flex flex-col gap-6 text-[length:var(--paragraph3-text)] font-[var(--paragraph-weight)] leading-[160%]">
+          <p>비슷한 금액의 요금이 중복 청구 된 경우 아래와 같이 생각하실 수 있습니다.</p>
+          <ol class="list-decimal pl-6">
+            <li>가족 또는 지인이 동일한 카드를 등록하여 사용하지 않았는지 확인해보세요.</li>
+            <li>우연히 같은 요금의 다른 차량 서비스를 이용하지 않았는지 확인해보는 것이 좋습니다.</li>
+            <li>어떠한 이유로 잘못 청구된 여정 요금이 변경된 경우가 없는지 확인해 보세요. 요금이 변경되면 업데이트 된 영수증이 발급됩니다.</li>
+          </ol>
+          <p>앱 결제 차량에서 실수로 현장에서 요금을 지불하여 중복 결제가 된 경우 결제된 카드 내역 또는 영수증 캡처하여 아래 링크를 통해 알려주세요.</p>
+          <!-- 게시판 링크 -->
+          <a href="/" class="m-1 text-current no-underline font-semibold border-b border-[var(--color-contentTertiary)]">[고객지원 &gt; 여정 및 요금 &gt; 내 요금 및 수수료 검토 &gt; 미터기 요금을 중복으로 결제하였습니다]</a>
+        </div>
+      </details>
+      <!-- 4 -->
+      <details class="group mx-auto w-full max-w-[1135px] border-b border-[#8989894d]">
+        <!-- 질문 영역 -->
+        <summary class="flex items-center gap-8 p-4 cursor-pointer text-[length:var(--paragraph3-text)] font-semibold focus:outline-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#0075FF]">
+          <!-- 질문 -->
+          <span>택시가 잡혀 기다렸으나 저와는 반대방향으로 이동했어요.</span>
+          <!-- 토글 아이콘 : +/- -->
+          <span class="relative ml-auto inline-block h-6 w-6" aria-hidden="true">
+            <span class="absolute left-1/2 top-1/2 block h-0.5 w-4 -translate-x-1/2 -translate-y-1/2 bg-[color:var(--color-primary)]"></span>
+            <span class="absolute left-1/2 top-1/2 block h-4 w-0.5 -translate-x-1/2 -translate-y-1/2 bg-[color:var(--color-primary)] group-open:opacity-0"></span>
+          </span>
+        </summary>
+        <!-- 답변 영역 -->
+        <div class="m-6 flex flex-col gap-6 text-[length:var(--paragraph3-text)] font-[var(--paragraph-weight)] leading-[160%]">
+          <p>비슷한 금액의 요금이 중복 청구 된 경우 아래와 같이 생각하실 수 있습니다.</p>
+          <ol class="list-decimal pl-6">
+            <li>가족 또는 지인이 동일한 카드를 등록하여 사용하지 않았는지 확인해보세요.</li>
+            <li>우연히 같은 요금의 다른 차량 서비스를 이용하지 않았는지 확인해보는 것이 좋습니다.</li>
+            <li>어떠한 이유로 잘못 청구된 여정 요금이 변경된 경우가 없는지 확인해 보세요. 요금이 변경되면 업데이트 된 영수증이 발급됩니다.</li>
+          </ol>
+          <p>앱 결제 차량에서 실수로 현장에서 요금을 지불하여 중복 결제가 된 경우 결제된 카드 내역 또는 영수증 캡처하여 아래 링크를 통해 알려주세요.</p>
+          <!-- 게시판 링크 -->
+          <a href="/" class="m-1 text-current no-underline font-semibold border-b border-[var(--color-contentTertiary)]">[고객지원 &gt; 여정 및 요금 &gt; 내 요금 및 수수료 검토 &gt; 미터기 요금을 중복으로 결제하였습니다]</a>
+        </div>
+      </details>
+      <!-- 5 -->
+      <details class="group mx-auto w-full max-w-[1135px] border-b border-[#8989894d]">
+        <!-- 질문 영역 -->
+        <summary class="flex items-center gap-8 p-4 cursor-pointer text-[length:var(--paragraph3-text)] font-semibold focus:outline-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#0075FF]">
+          <!-- 질문 -->
+          <span>프로모션 코드가 적용되지 않았습니다.</span>
+          <!-- 토글 아이콘 : +/- -->
+          <span class="relative ml-auto inline-block h-6 w-6" aria-hidden="true">
+            <span class="absolute left-1/2 top-1/2 block h-0.5 w-4 -translate-x-1/2 -translate-y-1/2 bg-[color:var(--color-primary)]"></span>
+            <span class="absolute left-1/2 top-1/2 block h-4 w-0.5 -translate-x-1/2 -translate-y-1/2 bg-[color:var(--color-primary)] group-open:opacity-0"></span>
+          </span>
+        </summary>
+        <!-- 답변 영역 -->
+        <div class="m-6 flex flex-col gap-6 text-[length:var(--paragraph3-text)] font-[var(--paragraph-weight)] leading-[160%]">
+          <p>비슷한 금액의 요금이 중복 청구 된 경우 아래와 같이 생각하실 수 있습니다.</p>
+          <ol class="list-decimal pl-6">
+            <li>가족 또는 지인이 동일한 카드를 등록하여 사용하지 않았는지 확인해보세요.</li>
+            <li>우연히 같은 요금의 다른 차량 서비스를 이용하지 않았는지 확인해보는 것이 좋습니다.</li>
+            <li>어떠한 이유로 잘못 청구된 여정 요금이 변경된 경우가 없는지 확인해 보세요. 요금이 변경되면 업데이트 된 영수증이 발급됩니다.</li>
+          </ol>
+          <p>앱 결제 차량에서 실수로 현장에서 요금을 지불하여 중복 결제가 된 경우 결제된 카드 내역 또는 영수증 캡처하여 아래 링크를 통해 알려주세요.</p>
+          <!-- 게시판 링크 -->
+          <a href="/" class="m-1 text-current no-underline font-semibold border-b border-[var(--color-contentTertiary)]">[고객지원 &gt; 여정 및 요금 &gt; 내 요금 및 수수료 검토 &gt; 미터기 요금을 중복으로 결제하였습니다]</a>
+        </div>
+      </details>
+    </section>
+  </body>
+  <body>
     <!-- 상단 Nav -->
     <div class="bg-primary w-full">
       <nav class="h-22 max-w-6xl mx-auto flex items-center justify-between px-10 box-border lg:h-22 md:h-16 md:px-5">
@@ -181,7 +311,6 @@
 
     <hr />
     <!-- faq 영역 -->
->>>>>>> 18d344b9291afe621a0d848d41d474e4c0d23ee9
     <section class="my-10 px-6 md:my-14 md:px-8 xl-my-16 xl:px-[200px]">
       <!-- 타이틀 -->
       <h2 class="mx-auto max-w-[1135px] mb-9 text-2xl font-bold leading-tight md:text-3xl xl:text-4xl">자주 하는 질문</h2>
@@ -312,8 +441,6 @@
         </div>
       </details>
     </section>
-<<<<<<< HEAD
-=======
     <!-- apply 영역 -->
     <section class="hidden lg:block bg-tertiary py-10 text-center">
       <h1 class="text-3xl lg:text-[var(--heading2-text)] font-bold mb-8 -indent-96">UT 앱에서 더욱 다양한 기능을 만나보세요</h1>
@@ -368,6 +495,5 @@
         </form>
       </div>
     </section>
->>>>>>> 18d344b9291afe621a0d848d41d474e4c0d23ee9
   </body>
 </html>
