@@ -39,9 +39,13 @@
 
   /* Heading */
   --text-heading1-text: 50.517px;
+  --text-heading2: 37.897px;
   --text-heading2-text: 37.897px;
+  --text-heading3: 28.43px;
   --text-heading3-text: 28.43px;
+  --text-heading4: 21.328px;
   --text-heading4-text: 21.328px;
+  --text-heading5: 16px;
   --text-heading5-text: 16px;
   --font-heading-weight: 700;
   --leading-heading-height: 140%; /* 70.724px */
